@@ -1,6 +1,6 @@
 # Updates API
 
-An API for maintaining
+An API for maintaining updates.
 
 ## Getting Started
 
