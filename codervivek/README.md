@@ -44,7 +44,7 @@ python3 run.py
 
 ## Testing
 
-If you on IITG network, you can test the API using [this link](172.16.115.46:5000/updatelists). Use curl or [Postman](https://www.getpostman.com/apps) to send GET, POST, PUT and DELETE requests.
+If you on IITG network, you can test the API using [this link](http://172.16.115.46:5000/updatelists). Use curl or [Postman](https://www.getpostman.com/apps) to send GET, POST, PUT and DELETE requests.
 
 E.g Open terminal and type:
 
