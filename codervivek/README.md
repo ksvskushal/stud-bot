@@ -9,6 +9,7 @@ Install flask, postgreSQL and run the server using the following commands.
 ### Installing
 
 To install flask and postgreSQL.
+
 Note: Use sudo only if some errors pop up.
 
 ```
@@ -19,6 +20,7 @@ sudo su - postgres
 ```
 
 Do the following to make a new user:
+
 Note: The username of postgreSQL should be same as your terminal username.
 
 ```
@@ -47,9 +49,13 @@ If you on IITG network, you can test the API using [this link](172.16.115.46:500
 E.g Open terminal and type:
 
 curl -H "Content-Type: application/json" -X POST -d '{"data": "New assignments are available"}' http://172.16.115.46:5000/updatelists/
+
 curl -H "Content-Type: application/json" -X POST -d '{"data": "Another update"}' http://172.16.115.46:5000/updatelists/
+
 curl -H "Content-Type: application/json" -X PUT -d '{"data": "New assignment is available"}' http://172.16.115.46:5000/updatelists/1/
+
 curl -H "Content-Type: application/json" -X DELETE http://172.16.115.46:5000/updatelists/1/
+
 curl -H "Content-Type: application/json" -X GET http://172.16.115.46:5000/updatelists/2/
 
 
