@@ -16,29 +16,29 @@ sudo pip3 install flask
 sudo pip3 install flask-sqlalchemy psycopg2 flask-migrate
 sudo apt-get install python-pip python-dev libpq-dev postgresql postgresql-contrib
 sudo su - postgres
-'''
+```
 
 Do the following to make a new user:
 Note: The username of postgreSQL should be same as your terminal username.
 
-'''
+```
 psql
 CREATE USER myprojectuser WITH PASSWORD 'password';
 ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
 ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';
 ALTER ROLE myprojectuser SET timezone TO 'UTC';
-'''
-'''
+```
+```
 sudo -u postgres psql -c 'alter user myprojectuser with createdb' postgres
-'''
+```
 Change postgreSQL settings in instance/config.py accordingly.
-'''
+```
 sudo pip3 install Flask-API
 python3 manage.py db init
 python3 manage.py db migrate
 python3 manage.py db upgrade
 python3 run.py
-'''
+```
 
 ## Testing
 
