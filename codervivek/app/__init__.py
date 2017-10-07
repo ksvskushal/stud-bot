@@ -65,8 +65,8 @@ def create_app(config_name):
          }, 200
 
         elif request.method == 'PUT':
-            update = str(request.data.get('update', ''))
-            updatelist.update = update
+            data = str(request.data.get('data', ''))
+            updatelist.data = data
             updatelist.save()
             response = jsonify({
                 'id': updatelist.id,
