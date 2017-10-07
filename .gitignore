@@ -1,2 +1,3 @@
 # Ignoring migrations files
 migrations/
+.gitignore
