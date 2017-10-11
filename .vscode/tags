@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+17f549d99474_.py	../codervivek/migrations/versions/17f549d99474_.py	1;"	kind:file	line:1
+CSRF_ENABLED	../codervivek/instance/config.py	/^    CSRF_ENABLED = True$/;"	kind:variable	line:5
+Config	../codervivek/instance/config.py	/^class Config(object):$/;"	kind:class	line:2
+DEBUG	../codervivek/instance/config.py	/^    DEBUG = False$/;"	kind:variable	line:25
+DEBUG	../codervivek/instance/config.py	/^    DEBUG = False$/;"	kind:variable	line:4
+DEBUG	../codervivek/instance/config.py	/^    DEBUG = True$/;"	kind:variable	line:11
+DEBUG	../codervivek/instance/config.py	/^    DEBUG = True$/;"	kind:variable	line:21
+DevelopmentConfig	../codervivek/instance/config.py	/^class DevelopmentConfig(Config):$/;"	kind:class	line:9
+ProductionConfig	../codervivek/instance/config.py	/^class ProductionConfig(Config):$/;"	kind:class	line:23
+SECRET	../codervivek/instance/config.py	/^    SECRET = 'codingclubiitg'$/;"	kind:variable	line:6
+SQLALCHEMY_DATABASE_URI	../codervivek/instance/config.py	/^    SQLALCHEMY_DATABASE_URI = 'postgresql:\/\/vivekraj:heysiri@localhost\/updates_api'$/;"	kind:variable	line:7
+StagingConfig	../codervivek/instance/config.py	/^class StagingConfig(Config):$/;"	kind:class	line:19
+TESTING	../codervivek/instance/config.py	/^    TESTING = False$/;"	kind:variable	line:26
+Updatelist	../codervivek/app/models.py	/^class Updatelist(db.Model):$/;"	kind:class	line:5
+__init__	../codervivek/app/models.py	/^    def __init__(self, data):$/;"	kind:member	line:17
+__init__.py	../codervivek/app/__init__.py	1;"	kind:file	line:1
+__repr__	../codervivek/app/models.py	/^    def __repr__(self):$/;"	kind:member	line:33
+__tablename__	../codervivek/app/models.py	/^    __tablename__ = 'updatelists'$/;"	kind:variable	line:8
+app	../codervivek/manage.py	/^app = create_app(config_name="production")$/;"	kind:variable	line:7
+app	../codervivek/run.py	/^app = create_app(config_name)$/;"	kind:variable	line:6
+app_config	../codervivek/instance/config.py	/^app_config = {$/;"	kind:variable	line:28
+branch_labels	../codervivek/migrations/versions/17f549d99474_.py	/^branch_labels = None$/;"	kind:variable	line:15
+bucketlist_manipulation	../codervivek/app/__init__.py	/^    def bucketlist_manipulation(id, **kwargs):$/;"	kind:function	line:53
+config	../codervivek/migrations/env.py	/^config = context.config$/;"	kind:variable	line:9
+config.py	../codervivek/instance/config.py	1;"	kind:file	line:1
+config_name	../codervivek/run.py	/^config_name = "production"$/;"	kind:variable	line:5
+create_app	../codervivek/app/__init__.py	/^def create_app(config_name):$/;"	kind:function	line:13
+data	../codervivek/app/models.py	/^    data = db.Column(db.String(2000))$/;"	kind:variable	line:11
+date_created	../codervivek/app/models.py	/^    date_created = db.Column(db.DateTime, default=db.func.current_timestamp())$/;"	kind:variable	line:12
+date_modified	../codervivek/app/models.py	/^    date_modified = db.Column($/;"	kind:variable	line:13
+db	../codervivek/app/__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:9
+delete	../codervivek/app/models.py	/^    def delete(self):$/;"	kind:member	line:29
+depends_on	../codervivek/migrations/versions/17f549d99474_.py	/^depends_on = None$/;"	kind:variable	line:16
+down_revision	../codervivek/migrations/versions/17f549d99474_.py	/^down_revision = None$/;"	kind:variable	line:14
+downgrade	../codervivek/migrations/versions/17f549d99474_.py	/^def downgrade():$/;"	kind:function	line:31
+env.py	../codervivek/migrations/env.py	1;"	kind:file	line:1
+get_all	../codervivek/app/models.py	/^    def get_all():$/;"	kind:member	line:26
+id	../codervivek/app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
+logger	../codervivek/migrations/env.py	/^logger = logging.getLogger('alembic.env')$/;"	kind:variable	line:14
+manage.py	../codervivek/manage.py	1;"	kind:file	line:1
+manager	../codervivek/manage.py	/^manager = Manager(app)$/;"	kind:variable	line:9
+migrate	../codervivek/manage.py	/^migrate = Migrate(app, db)$/;"	kind:variable	line:8
+models.py	../codervivek/app/models.py	1;"	kind:file	line:1
+onupdate	../codervivek/app/models.py	/^        onupdate=db.func.current_timestamp())$/;"	kind:variable	line:15
+process_revision_directives	../codervivek/migrations/env.py	/^    def process_revision_directives(context, revision, directives):$/;"	kind:function	line:61
+revision	../codervivek/migrations/versions/17f549d99474_.py	/^revision = '17f549d99474'$/;"	kind:variable	line:13
+run.py	../codervivek/run.py	1;"	kind:file	line:1
+run_migrations_offline	../codervivek/migrations/env.py	/^def run_migrations_offline():$/;"	kind:function	line:31
+run_migrations_online	../codervivek/migrations/env.py	/^def run_migrations_online():$/;"	kind:function	line:50
+save	../codervivek/app/models.py	/^    def save(self):$/;"	kind:member	line:21
+target_metadata	../codervivek/migrations/env.py	/^target_metadata = current_app.extensions['migrate'].db.metadata$/;"	kind:variable	line:23
+updatelists	../codervivek/app/__init__.py	/^    def updatelists():$/;"	kind:function	line:21
+upgrade	../codervivek/migrations/versions/17f549d99474_.py	/^def upgrade():$/;"	kind:function	line:19
