@@ -55,6 +55,14 @@ class Student(db.Model):
     # batch = db.relationship("Batch", back_populates="students")
     courses = db.relationship("StudentToCourse", back_populates='student')
 
+class ProfessorToCourse(db.Model):
+
+    __tablename__='professor_to_course'
+
+    professor_id = db.Column(db.Integer, db.ForeignKey('professor.id'), primary_key=True)
+    course_id = db.Column(db.Integer, db.ForeignKey('course.id'), primary_key=True)
+    professor = db.relationship("Professor", back_populates="courses")
+    course = db.relationship("Course", back_populates="professors")
 
 class Professor(db.Model):
 
@@ -65,6 +73,7 @@ class Professor(db.Model):
     username=db.Column(db.String(100))
     department_id = db.Column(db.Integer, db.ForeignKey('department.id'))
     department = db.relationship("Department", back_populates="professors")
+    course = db.relationship("ProfessorToCourse", back_populates="professor")
 
 
 class Year(db.Model):
@@ -92,6 +101,7 @@ class Courses(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     student = db.relationship("StudentToCourse", back_populates="course")
+    professor=db.relationship("ProfessorToCourse", back_populates="course")
     department = db.relationship("Department", back_populates="courses")
     year = db.relationship("Year", back_populates="courses")
     optional = db.Column(db.Boolean, unique=False, default=False)
